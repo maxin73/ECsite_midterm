@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head th:fragment="head">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bon Appétit Online</title>
+  </head>
+
+  <body style="height:2000px">
+    <header>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color: #93B7BE;">
+      <div class="container">
+        <a class="navbar-brand h1" href="#"><i class="fa-solid fa-wheat-awn"></i></i>  Bon Appétit Online</a>
+        <button 
+        class="navbar-toggler" 
+        type="button" 
+        data-toggle="collapse" 
+        data-target="#navbarNav" 
+        aria-controls="navbarNav" 
+        aria-expanded="false" 
+        aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="navbar-collapse collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav" id="page-link">
+            <li class="nav-item active">
+              <a class="nav-link" href="#menu">MENU</a>
+            <li class="nav-item">
+              <a class="nav-link active" href="#contact">CONTACT</a>
+            </li>
+            <li>
+              <a class="nav-link active" href="#"><i class="fa-solid fa-cart-shopping cart_icon" id="cart-icon"></i>
+              </a>
+            </li>
+          </ul>
+          <div class="cart">
+            <h2 class="cart-title">Cart Item</h2>
+            <div class="cart-content">
+            </div>
+            <!-- Total -->
+            <div class="total">
+              <div class="total-title">Total</div>
+              <div class="total-price">$0</div>
+            </div>
+            <!-- Buy Button -->
+            <button type="button" class="btn-buy">Order</button>
+            <!-- Cart close -->
+            <i class="fa-solid fa-xmark" id="close-cart"></i>
+          </div>
+        </div>
+      </div>
+    </nav>
+    </header>
+
+    <main>
+      <div id="top">
+        <h1>It's About Time For</h1>
+        <img src="/img/female-waiting-for-order-at-cafe.svg" alt="">
+      </div>
+
+      <!-- MENU -->
+      <div id="menu"></div>
+        <!-- Content -->
+        <div class="shop container">
+          <h2 class="section-title">- MENU - </h2>
+          <div class="shop-content">
+            <!-- Box1 -->
+            <div class="product-box">
+              <img src="img/menu1.jpg" alt="" class="product-img">
+              <h2 class="product-title">menu1</h2>
+              <span class="price">$10</span>
+              <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box2 -->
+            <div class="product-box">
+              <img src="img/menu2.jpg" alt="" class="product-img">
+              <h2 class="product-title">menu2</h2>
+              <span class="price">$15</span>
+              <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box3 -->
+            <div class="product-box">
+              <img src="img/menu3.jpg" alt="" class="product-img">
+              <h2 class="product-title">menu3</h2>
+              <span class="price">$20</span>
+              <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box4 -->
+            <div class="product-box">
+              <img src="img/menu4.jpg" alt="" class="product-img">
+              <h2 class="product-title">menu4</h2>
+              <span class="price">$21</span>
+              <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box5 -->
+            <div class="product-box">
+              <img src="img/menu5.jpg" alt="" class="product-img">
+              <h2 class="product-title">menu5</h2>
+              <span class="price">$10</span>
+              <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box6 -->
+            <div class="product-box">
+              <img src="img/menu6.jpg" alt="" class="product-img">
+              <h2 class="product-title">menu6</h2>
+              <span class="price">$30</span>
+              <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box7 -->
+            <div class="product-box">
+              <img src="img/menu7.jpg" alt="" class="product-img">
+              <h2 class="product-title">menu7</h2>
+              <span class="price">$77</span>
+              <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+            </div>
+            <!-- Box8 -->
+            <div class="product-box">
+              <img src="img/menu8.jpg" alt="" class="product-img">
+              <h2 class="product-title">menu8</h2>
+              <span class="price">$18</span>
+              <i class="fa-solid fa-cart-shopping add-cart" id="cart-icon"></i>
+            </div>
+        </div>   
+      </div>
+  </div>
+
+      <!-- CONTACT FORM -->
+      <div id="contact"></div>
+      <div class="Form">
+        <div class="Form-bg">
+          <h2>CONTACT</h2>
+          <div class="Form-Item">
+            <p class="Form-Item-Label">Name</p>
+            <input type="text" class="Form-Item-Input">
+          </div>
+          <div class="Form-Item">
+            <p class="Form-Item-Label">Phone Number</p>
+            <input type="text" class="Form-Item-Input" placeholder="000-000-0000">
+          </div>
+          <div class="Form-Item">
+            <p class="Form-Item-Label">Email Address</p>
+            <input type="email" class="Form-Item-Input" placeholder="example@gmail.com">
+          </div>
+          <div class="Form-Item">
+            <p class="Form-Item-Label isMsg">Message</p>
+            <textarea class="Form-Item-Textarea"></textarea>
+          </div>
+          <input type="submit" class="Form-Btn" value="Send">
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <p>Bon Appétit Online &copy; 2023, All rights reserved.</p>
+      </footer>
+
+      <!-- SCRIPT -->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/73c6ca0eba.js" crossorigin="anonymous"></script>
+      <script src="js/script.js"></script>
+    </main>
+  </body>
+</html>
